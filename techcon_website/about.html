@@ -21,12 +21,14 @@
         nav {
             background-color: #34495e;
             padding: 1rem;
+            text-align: center;
         }
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 1rem;
             padding: 0.5rem;
+            display: inline-block;
         }
         nav a:hover {
             background-color: #2c3e50;
@@ -81,32 +83,45 @@
             max-width: 100%;
             height: auto;
             border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .article-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .article-header img {
+            max-width: 300px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>About TechCon 2024</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="register.html">Register</a>
-        <a href="contact.html">Contact</a>
-    </nav>
 
     <main>
         <article id="history">
-            <h2>Our History</h2>
-            <img src="images/techcon-history.jpg" alt="TechCon's first conference in 2015 showing a packed auditorium" class="history-image">
-            <p>
-                Founded in 2015, TechCon began as a small gathering of technology enthusiasts in Silicon Valley. 
-                What started as a 200-person event has grown into one of the world's premier technology conferences, 
-                attracting over 10,000 attendees annually. Our journey reflects the rapid evolution of technology itself, 
-                from the early days of cloud computing to today's AI and quantum computing revolutions.
-            </p>
+            <div class="article-header">
+                <img src="images/techcon-history.jpg" alt="TechCon's first conference in 2015 showing a packed auditorium" class="history-image">
+                <div>
+                    <h2>Our History</h2>
+                    <p>
+                        Founded in 2015, TechCon began as a small gathering of technology enthusiasts in Silicon Valley. 
+                        What started as a 200-person event has grown into one of the world's premier technology conferences, 
+                        attracting over 10,000 attendees annually. Our journey reflects the rapid evolution of technology itself, 
+                        from the early days of cloud computing to today's AI and quantum computing revolutions.
+                    </p>
+                </div>
+            </div>
         </article>
 
         <article id="mission">
@@ -131,7 +146,7 @@
             <h2>Notable Past Speakers</h2>
             <div class="speaker-grid">
                 <div class="speaker-card">
-                    <img src="images/speaker1.jpg" alt="Dr. Sarah Chen - AI Research Director">
+                    <img src="images/speaker1.jpg" alt="Dr. Sarah Chen - AI Research Director at TechInnovate">
                     <h3>Dr. Sarah Chen</h3>
                     <p>AI Research Director at TechInnovate</p>
                     <p>Pioneer in machine learning algorithms and ethical AI development. Led breakthrough research in 
@@ -139,7 +154,7 @@
                 </div>
 
                 <div class="speaker-card">
-                    <img src="images/speaker2.jpg" alt="Marcus Johnson - Quantum Computing Expert">
+                    <img src="images/speaker2.jpg" alt="Marcus Johnson - Quantum Computing Expert and Founder of QuantumLeap Technologies">
                     <h3>Marcus Johnson</h3>
                     <p>Quantum Computing Expert</p>
                     <p>Developed revolutionary quantum algorithms and founded QuantumLeap Technologies. 
@@ -147,7 +162,7 @@
                 </div>
 
                 <div class="speaker-card">
-                    <img src="images/speaker3.jpg" alt="Dr. Elena Rodriguez - Cybersecurity Specialist">
+                    <img src="images/speaker3.jpg" alt="Dr. Elena Rodriguez - Cybersecurity Specialist and Author">
                     <h3>Dr. Elena Rodriguez</h3>
                     <p>Cybersecurity Specialist</p>
                     <p>Leading expert in blockchain security and digital privacy. Author of multiple 
